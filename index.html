@@ -1,197 +1,192 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanjay Madesha - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-iKbQ/r+/k+gDxFPf4gjt5Knz5GftF+2htOM3kbbBc6tfclqBcTID5lNHtN+7Q2V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
-        #header, #footer {
-            background: #333;
+        header {
+            background-color: #333;
             color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 1em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 2em auto;
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .skills, .projects, .experience {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills .skill, .projects .project, .experience .job {
+            flex: 1 1 calc(33.333% - 2em);
+            margin: 1em;
+            background-color: #f9f9f9;
+            padding: 1em;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 1em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            padding: 1em;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
             text-align: center;
             padding: 2em 0;
+            background-color: #333;
+            color: #fff;
         }
-        .feature {
-            padding: 2em 0;
-        }
-        .feature img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-        .feature:hover img {
-            transform: scale(1.1);
-        }
-        .content h4, .content h3 {
-            margin-top: 0;
-        }
-        .icons a {
+        .social-icons a {
+            color: #fff;
             margin: 0 0.5em;
-            color: #fff;
             font-size: 1.5em;
-        }
-        .actions .button {
-            background: #0066cc;
-            color: #fff;
-            padding: 0.5em 1em;
             text-decoration: none;
-            border-radius: 0.3em;
-            transition: background 0.3s ease;
-        }
-        .actions .button:hover {
-            background: #005bb5;
         }
     </style>
 </head>
-<body class="is-preload">
+<body>
 
-    <!-- Header -->
-    <div id="header">
-        <span class="logo icon fa-paper-plane"></span>
-        <h1>Organized data gives birth to insights; 
-            <br />
-            storytelling brings them to life</h1>
-        <p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a>
-        <br />
-        and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
-    </div>
+    <header>
+        <h1>Sanjay Madesha</h1>
+        <p>Transforming data into actionable insights</p>
+    </header>
 
-    <!-- Main -->
-    <div id="main">
-        <header class="major container medium">
-            <h2>Hey there,
-            <br />
-            I'm Sanjay
-            </h2>
-        </header>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <section>
-            <header>
-                <h3>
-                    <p>An analytical thinker specialized in simplifying complex data landscapes, 
-                    <br />
-                    transforming chaos into clarity for informed decision-making,
-                    <br />
-                    focused on implementing simple solutions in a complex world of data.
-                    <br />
-                    </p>
-                </h3>
-            </header>
-        </section>
-
-        <section class="feature right">
-            <a href="#" class="image icon solid fa-signal"><img src="images/Experience.webp" alt="" /></a>
-            <div class="content">
-                <h4>Business Intelligence Developer</h4>
-                <p>Feb 2023 - Jan 2024<br />
-                Chenmed<br />
-                Miami, Florida</p>
-
-                <h4>Data Analyst</h4>
-                <p>Jul 2020 - Jul 2021<br />
-                Rockmetric<br />
-                Mumbai, India</p>
+    <div class="container">
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Data Analysis</h3>
+                    <p>Proficient in analyzing complex data sets to derive actionable insights.</p>
+                </div>
+                <div class="skill">
+                    <h3>Business Intelligence</h3>
+                    <p>Experienced in creating BI solutions to support strategic decision-making.</p>
+                </div>
+                <div class="skill">
+                    <h3>Visualization Tools</h3>
+                    <p>Expert in Tableau, Power BI, and other visualization tools.</p>
+                </div>
             </div>
         </section>
 
-        <div class="box alt container">
-            <section class="feature left">
-                <a href="#" class="image icon solid fa-signal"><img src="images/Airlines.png" alt="" /></a>
-                <div class="content">
-                    <h3>Airline Analytics: Industry Insights & Competitor Analysis</h3>
-                    <p>Objective: Utilize Tableau for an in-depth analysis of the airline industry, focusing on on-time performance to identify Frontier Airlines' potential competitors.
-                    <br />Key Insights: Provided a comprehensive industry analysis, highlighting Frontier Airlines and its competitive positioning in Denver against United Airlines.
-                    <br />Outcome: Delivered strategic insights for Frontier Airlines to improve its operational efficacy and competitive standing in the Denver market.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Airline Analytics</h3>
+                    <p>Utilized Tableau for an in-depth analysis of the airline industry, focusing on on-time performance to identify Frontier Airlines' potential competitors.</p>
                 </div>
-            </section>
-            <section class="feature right">
-                <a href="#" class="image icon solid fa-code"><img src="images/Finance.png" alt="" /></a>
-                <div class="content">
+                <div class="project">
                     <h3>Financial Analytics</h3>
-                    <p>Implemented financial models to forecast revenues and optimize costs, enhancing decision-making processes. Delivered actionable insights and streamlined reporting.</p>
+                    <p>Implemented financial models to forecast revenues and optimize costs, enhancing decision-making processes.</p>
                 </div>
-            </section>
-            <section class="feature left">
-                <a href="#" class="image icon solid fa-mobile-alt"><img src="images/Camp.png" alt="" style="width: 100%; height: 100%;" /></a>
-                <div class="content">
-                    <h3>Customer Engagement Analysis</h3>
-                    <p>Analyzed customer interaction data to identify trends and patterns, improving engagement strategies. Enhanced customer satisfaction and retention through data-driven insights.</p>
-                </div>
-            </section>
-            <section class="feature right">
-                <a href="#" class="image icon solid fa-code"><img src="images/covid.png" alt="" /></a>
-                <div class="content">
+                <div class="project">
                     <h3>COVID-19 Impact Analysis</h3>
                     <p>Conducted thorough analysis on the impact of COVID-19 on various industries, providing crucial insights to help businesses navigate through the pandemic challenges.</p>
                 </div>
-            </section>
-            <section class="feature left">
-                <a href="#" class="image icon solid fa-mobile-alt"><img src="images/walmart.png" alt="" style="width: 100%; height: 100%;" /></a>
-                <div class="content">
-                    <h3>Retail Analytics: Walmart Case Study</h3>
-                    <p>Utilized advanced analytics to study Walmart's sales data, uncovering key insights into consumer behavior and sales performance. Recommendations led to improved inventory management.</p>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <footer class="major container medium">
-            <h3>Get shady with science</h3>
-            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-            <ul class="actions special">
-                <li><a href="#" class="button">Join our crew</a></li>
-            </ul>
-        </footer>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-        <div class="container medium">
-            <header class="major last">
-                <h2>Questions or comments?</h2>
-            </header>
-            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-            orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-            <form method="post" action="#">
-                <div class="row">
-                    <div class="col-6 col-12-mobilep">
-                        <input type="text" name="name" placeholder="Name" />
-                    </div>
-                    <div class="col-6 col-12-mobilep">
-                        <input type="email" name="email" placeholder="Email" />
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions special">
-                            <li><input type="submit" value="Send Message" /></li>
-                        </ul>
-                    </div>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="job">
+                    <h3>Business Intelligence Developer</h3>
+                    <p>Feb 2023 - Jan 2024<br />
+                    Chenmed<br />
+                    Miami, Florida</p>
                 </div>
+                <div class="job">
+                    <h3>Data Analyst</h3>
+                    <p>Jul 2020 - Jul 2021<br />
+                    Rockmetric<br />
+                    Mumbai, India</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/sanjaymadesha/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://github.com/smadesh2" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:sanjay.nm08@gmail.com" class="icon brands fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Sanjay Madesha. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
+        </section>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer>
+        <p>&copy; 2024 Sanjay Madesha. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sanjaymadesha/" class="fab fa-linkedin"></a>
+            <a href="https://github.com/smadesh2" class="fab fa-github"></a>
+            <a href="mailto:sanjay.nm08@gmail.com" class="fas fa-envelope"></a>
+        </div>
+    </footer>
+
 </body>
 </html>
